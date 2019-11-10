@@ -8,7 +8,7 @@ from keras.models import load_model
 # The data, split between train and test sets:
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
-platform = 'subSystem-Linux'
+platform = 'VirtualMachine'
 dict_image = {'0': 'airplane', '1': 'automobile', '2': 'bird', '3': 'cat', '4': 'deer','5': 'dog', '6': 'frog', '7': 'horse', '8': 'ship', '9': 'truck'}
 model = load_model('./saved_models/keras_cifar10_trained_model_200_epochs.h5')
 if platform == 'subSystem-Linux':
